@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+   <div>
+     <!-- alert component -->
+		<div class="alert alert-success hide">
+			<div class="alert--content">
+				<p class="alert--text">
+					<i class="fas fa-check-circle"></i> 
+                    <span class="success-message"></span>
+				</p>
+			</div>
+		</div>
+
+		<!-- error alert -->
+		<div class="alert alert-error hide">
+			<div class="alert--content">
+				<p class="alert--text">
+					<i class="fas fa-circle-exclamation"></i> 
+                    <span class="error-message"></span>
+				</p>
+			</div>
+		</div>
+   </div>
+
+    
+    <div class="container">
+        <h1>\Contact me</h1>
+        <form action="form" id="form">
+            <div class="form-control">
+                <label for="username">Fullname</label>
+                <input type="text" name="full_name" id="username" class="username">
+                <i class='bx bx-check success-message-icon'></i>
+                <i class='bx bx-error error-message-icon'></i>
+                <small>Error Massage</small>
+            </div>
+            <div class="form-control">
+                <label for="Email">Email</label>
+                <input type="text" name="email" id="Email" class="Email">
+                <i class='bx bx-check success-message-icon'></i>
+                <i class='bx bx-error error-message-icon'></i>
+             <small>Error Massage</small>
+            </div>
+            <div class="form-control">
+                <label for="Massage">Message</label>
+               <textarea id="textArea" name="message"></textarea>
+               <i class='bx bx-check success-message-icon'></i>
+                <i class='bx bx-error error-message-icon'></i>
+             <small>Error Massage</small>
+            </div>
+       
+            <button type="submit" class="btn submit-btn">Submit</button>
+        </form>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="./main.js"></script>
+    <script src="./send-email.js"></script>
+    
+
+    
+</body>
+</html>
